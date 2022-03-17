@@ -2,6 +2,52 @@ body {
     width: 100%;
     margin: 20px;
 }
+/* artist.html*/
+.main-artists {
+ display: flex;
+ justify-content: center;
+}
+.white-section {
+    width: 100%;
+    max-height: 241px;
+    background-color: #E5E5E5;
+}
+.section-artists-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #DECAAF;
+}
+.section-artists-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #29304A;
+}
+.section-artists-three {
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-around;
+    background-color: #EDE6DC;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+.rene-portrait {
+    max-width: 284px;
+    max-height: 345px;
+}
+.rene-portrait {
+    max-width: 404px;
+    max-height: 308px;
+}
+.rene-portrait {
+    max-width: 380px;
+    max-height: 276px;
+}
+
+
 /* footer*/
 footer {
     width: 100%;
