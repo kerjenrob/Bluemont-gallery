@@ -5,39 +5,52 @@ body {
 /* footer*/
 footer {
     width: 100%;
+    height: 400px;
     background-color: #29304A;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .logo {
     font-family: 'Lora', serif;
     font-size: 34px;
     color: #FFFFFF;
+    max-width: 500px;
+    display: flex;
+    justify-self: flex-start;
+
 }
 h5 {
     color: #FFFFFF;
     font-family: 'Arvo', serif;
     font-size: 20px;
+    font-style: normal;
 }
 h6 {
     color: #FFFFFF;
     font-family: 'Arvo', serif;
     font-size: 16px;
-}
-.from_footer {
-    font-family: 'Cinzel', serif;
-}
+} /*
 .container_footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+}*/
+.container_footer {
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 95%;
 }
 .grid_footer {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(4 1fr);
-    grid-gap: 15px;
-    max-width: 1000px;
-    max-height: 400px;
-    padding: 15%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 1fr);
+    row-gap: 0em;
+    width: 400px;
+    height: 175px;
 }   
 .grid_footer_one {
     grid-area: 1/1/2/2;
@@ -63,12 +76,60 @@ h6 {
 .grid_footer_eight {
     grid-area: 2/3/3/4;
 }
-.from_footer {
+/* form*/
+.form_footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    max-width: 300px;
+}
+.label_form {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: #FFFFFF;
 }
 .btn-footer {
     max-width: 226xp;
     max-height: 45px;
+    background-color: #AB7020;
+    color: #FFFFFF;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+}
+.btn-footer:hover {
+    background-color: #ca8a31;
+    transform: scaleY(1.2);
+}
+#email {
+    max-width: 226xp;
+    max-height: 45px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.container_bootonfoot {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    flex-direction: row;
+}
+.all-rights {
+    display: flex;
+    justify-self: flex-start;
+}
+.container_icon {
+    display: flex;
+    justify-content: space-around;
+}
+.fa-facebook-f{
+    color: #FFFFFF;
+}
+.fa-twitter {
+    color: #FFFFFF;
+}
+.fa-linkedin-in {
+    color: #FFFFFF;   
+}
+.fa-pinterest-p {
+    color: #FFFFFF;   
+   
 }
