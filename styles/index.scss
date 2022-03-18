@@ -1,34 +1,60 @@
+@use 'fonts';
+@import 'fonts';
+
 body {
     width: 100%;
     margin: 20px;
+    background-color: #E5E5E5;
 }
 /* artist.html*/
 .main-artists {
  display: flex;
- justify-content: center;
+ justify-content: center; /* why are the 'section-artist' not in the center*/
+ flex-direction: column;
 }
 .white-section {
-    width: 100%;
-    max-height: 241px;
+    width: 100%; 
+    max-height: 500px;  /* I can not get it higher!*/
+    height: 20%;
     background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
 }
 .section-artists-one {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #DECAAF;
+    width: 80%;
+}
+.renefont {
+    color: #29304A;
+    max-width: 500px;
+    margin: 20px;
 }
 .section-artists-two {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #29304A;
+    width: 80%;
+}
+.trissfont {
+    color: #EDE6DC;
+    max-width: 500px;
+    margin: 20px;
 }
 .section-artists-three {
     display: flex;
     flex-direction: row;   
-    justify-content: space-around;
+    justify-content: center;
     background-color: #EDE6DC;
+    width: 80%;
+}
+.irisfont {
+    color: #29304A;
+    max-width: 500px;
+    margin: 20px;
 }
 .footer-left {
     display: flex;
@@ -37,16 +63,49 @@ body {
 .rene-portrait {
     max-width: 284px;
     max-height: 345px;
+    transform: 
+        translate(40px, 40px);
 }
-.rene-portrait {
+.triss-portrait {
     max-width: 404px;
     max-height: 308px;
+    transform: 
+        translate(40px, 40px);
 }
-.rene-portrait {
+.iris-portrait {
     max-width: 380px;
     max-height: 276px;
+    transform: 
+        translate(40px, 40px);
 }
-
+@media screen and (max-width: 900px){
+    .rene-portrait {
+        max-width: 184px;
+        max-height: 245px;
+    }
+    .triss-portrait {
+        max-width: 304px;
+        max-height: 208px;
+    }
+    .iris-portrait {
+        max-width: 280px;
+        max-height: 176px;
+    }
+    }
+@media screen and (max-width: 600px){
+    .rene-portrait {
+        max-width: 84px;
+        max-height: 145px;
+     }
+    .triss-portrait {
+        max-width: 204px;
+        max-height: 108px;
+        }
+    .iris-portrait {
+        max-width: 180px;
+        max-height: 76px;
+    }
+    }
 
 /* footer*/
 footer {
@@ -57,40 +116,14 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
-.logo {
-    font-family: 'Lora', serif;
-    font-size: 34px;
-    color: #FFFFFF;
-    max-width: 500px;
-    display: flex;
-    justify-self: flex-start;
-
-}
-h5 {
-    color: #FFFFFF;
-    font-family: 'Arvo', serif;
-    font-size: 20px;
-    font-style: normal;
-}
-h6 {
-    color: #FFFFFF;
-    font-family: 'Arvo', serif;
-    font-size: 16px;
-} /*
-.container_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}*/
 .container_footer {
     display:flex;
     justify-content: center;
     flex-direction: row;
     width: 95%;
 }
-.grid_footer {
+.grid_footer { /* why is the space (gap) so big? I want it smaller*/
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3 1fr);
@@ -122,7 +155,23 @@ h6 {
 .grid_footer_eight {
     grid-area: 2/3/3/4;
 }
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:visited{
+    color: #FFFFFF;  
+}
+
 /* form*/
+footer {
+    display: flex;
+    flex-direction: column;  
+}
+.container_footer {
+    display: flex;
+    flex-direction: row;
+}
 .form_footer {
     display: flex;
     flex-direction: column;
@@ -152,30 +201,33 @@ h6 {
     margin-top: 13px;
     margin-bottom: 13px;
 }
-.container_bootonfoot {
+.container_bottomfoot {
     display: flex;
-    align-self: flex-end;
-    justify-self: flex-end;
     flex-direction: row;
-}
+    justify-items: flex-end;
+}/*     It don't work! they need to get down and split up!
 .all-rights {
     display: flex;
     justify-self: flex-start;
+    color: #FFFFFF;
 }
 .container_icon {
     display: flex;
     justify-content: space-around;
-}
+}*/
 .fa-facebook-f{
-    color: #FFFFFF;
+    color: #FFFFFF; 
+    margin: 20px;
 }
 .fa-twitter {
     color: #FFFFFF;
+    margin: 20px;
 }
 .fa-linkedin-in {
     color: #FFFFFF;   
+    margin: 20px;
 }
 .fa-pinterest-p {
-    color: #FFFFFF;   
-   
+    color: #FFFFFF;     
+    margin: 20px;
 }
