@@ -1,5 +1,8 @@
 .nav {
     background-color: green;
+    display: flex;
+    flex-direction: row;
+    min-height: 4vw;
 }
 
 .nav__logo {
@@ -12,6 +15,10 @@
     color: #29304A;
 }
 
+.nav__logo {
+    text-decoration: none;
+}
+
 .logo {
     font-family: 'Lora';
     font-style: normal;
@@ -22,6 +29,21 @@
     color: #29304A;
 }
 
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
 .nav__link {
-    background-color: green;
+    text-decoration: none;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #29304A;
 }
