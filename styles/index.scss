@@ -183,20 +183,6 @@ body {
     opacity: 0.3;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 900px){
     .rene-portrait {
         max-width: 184px;
@@ -226,7 +212,7 @@ body {
     }
     }
 
-/* footer*/
+/* Old footer
 footer {
     width: 100%;
     height: 400px;
@@ -242,7 +228,8 @@ footer {
     flex-direction: row;
     width: 95%;
 }
-.grid_footer { /* why is the space (gap) so big? I want it smaller*/
+.grid_footer { 
+    // why is the space (gap) so big? I want it smaller
     display: grid;
     grid-template-columns: repeat(3 1fr);
     grid-template-rows: repeat(3 1fr);
@@ -282,7 +269,7 @@ a:visited{
     color: #FFFFFF;  
 }
 
-/* footer form*/
+/* footer form
 footer {
     display: flex;
     flex-direction: column;  
@@ -333,7 +320,7 @@ footer {
 .container_icon {
     display: flex;
     justify-content: space-around;
-}*/
+}
 .fa-facebook-f{
     color: #FFFFFF; 
     margin: 20px;
@@ -356,4 +343,125 @@ footer {
 @media screen and (max-width: 600px){
 
 }
-/*end footer*/
+/*end old footer*/
+
+/* new footer*/
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #29304A;
+    padding: 20px;
+
+}
+.grid_footer { 
+    display: grid;
+    grid-template-columns: repeat(8 1fr);
+    grid-template-rows: repeat(8 1fr);
+    row-gap: 1px;
+    width: 80%;
+    height: 200px;
+}  
+.grid_footer_logo {
+    grid-area: 1/1/3/4;
+} 
+.grid_footer_art {
+    grid-area: 4/2/5/3;
+}
+.grid_footer_collections {
+    grid-area: 5/2/6/3;
+}
+.grid_footer_artists {
+    grid-area: 6/2/7/3;
+}
+.grid_footer_about {
+    grid-area: 4/3/5/4;
+}
+.grid_footer_goals {
+    grid-area: 5/3/6/4;
+}
+.grid_footer_staff {
+    grid-area: 6/3/7/4;
+}
+.grid_footer_contact {
+    grid-area: 4/4/5/5;
+}
+.grid_footer_find {
+    grid-area: 5/4/6/5;
+}
+.grid_footer_join {
+    grid-area: 3/7/4/8;
+}
+.grid_footer_input {
+    grid-area: 4/7/5/8;
+}
+.grid_footer_btn {
+    grid-area: 6/7/7/8;
+}
+.grid_footer_rights {
+    grid-area: 8/1/9/2;
+}
+.grid_footer_facebook {
+    grid-area: 8/5/9/6;
+}
+.grid_footer_twitter {
+    grid-area: 8/6/9/7;
+}
+.grid_footer_linkedin {
+    grid-area: 8/7/9/8;
+}
+.grid_footer_pinterest {
+    grid-area: 8/8/9/9;
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+a:visited{
+    color: #FFFFFF;  
+}
+.label_form {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.btn-footer {
+    max-width: 226xp;
+    max-height: 45px;
+    background-color: #AB7020;
+    color: #FFFFFF;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+}
+.btn-footer:hover {
+    background-color: #ca8a31;
+    transform: scaleY(1.2);
+}
+#email {
+    max-width: 226xp;
+    max-height: 45px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.fa-facebook-f{
+    color: #FFFFFF; 
+    margin: 20px;
+}
+.fa-twitter {
+    color: #FFFFFF;
+    margin: 20px;
+}
+.fa-linkedin-in {
+    color: #FFFFFF;   
+    margin: 20px;
+}
+.fa-pinterest-p {
+    color: #FFFFFF;     
+    margin: 20px;
+}
+@media screen and (max-width: 900px){
+
+}
+@media screen and (max-width: 600px){
+
+}
+
