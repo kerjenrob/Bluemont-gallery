@@ -283,7 +283,7 @@ a:visited{
     display: flex;
     flex-direction: row;
     justify-items: flex-end;
-}/* It don't work! they need to get down and split up!*/
+}/* It don't work! the icons need to get down and split up!*/
 .all-rights {
     display: flex;
     justify-self: flex-start;
@@ -308,11 +308,26 @@ a:visited{
 .fa-pinterest-p {
     color: #FFFFFF;     
     margin: 20px;
-}/*
-@media screen and (max-width: 900px){
-
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 950px){
+    .footer-column-left {
+        transform:
+            translateX(100px);
+    }
+    .footer-column-middle {
+        transform:
+            translateX(100px);
+    }
+    .footer-column-right {
+        transform:
+            translateX(100px);
+    }
+    .form_footer{
+        transform: 
+            translateX(150px);
+    }
+}
+@media screen and (max-width: 850px){
 
 }
 /*end old footer*/
