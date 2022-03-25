@@ -1,5 +1,7 @@
 @use 'fonts';
+@use 'footer';
 @import 'fonts';
+@import 'footer';
 
 body {
     width: 100%;
@@ -9,11 +11,12 @@ body {
 /* artist.html*/
 .main-artists {
  display: flex;
- justify-content: center; /* why are the 'section-artist' not in the center*/
- flex-direction: column;
+/* justify-content: center; /* why are the 'section-artist' not in the center*/
+align-content: center;
+flex-direction: column;
 }
 .white-section {
-    width: 100%;
+    width: 80%;
     height: 400px;
     background-color: #E5E5E5;
     display: flex;
@@ -31,6 +34,21 @@ body {
     color: #29304A;
     max-width: 500px;
     margin: 20px;
+}
+.btn-artist {
+    max-width: 400xp;
+    max-height: 55px;
+    background-color: #AB7020;
+    color: #FFFFFF;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    transform:
+        translate(20px, 20px);
+}
+.btn-artist:hover {
+    background-color: #ca8a31;
+    transform: scaleY(1.2)
+    translate(20px, 20px);
 }
 .section-artists-two {
     display: flex;
@@ -55,10 +73,6 @@ body {
     color: #29304A;
     max-width: 500px;
     margin: 20px;
-}
-.footer-left {
-    display: flex;
-    flex-direction: column;
 }
 .rene-portrait-transform {
     max-width: 284px;
@@ -125,10 +139,29 @@ body {
     width: 80%;
     height: 400px;
 }
-.collectionimg {
+.collectionimg-rene {
     max-width: 350px;
     max-height: 450px;
     margin: 20px;
+}
+.collectionimg-iris {
+    max-width: 350px;
+    max-height: 450px;
+    margin: 20px;
+}
+.collectionimg-triss {
+    max-width: 350px;
+    max-height: 450px;
+    margin: 20px;
+}
+.collectionimg-rene:hover {
+    opacity: 0.3;
+}
+.collectionimg-iris:hover {
+    opacity: 0.3;
+}
+.collectionimg-triss:hover {
+    opacity: 0.3;
 }
 
 /*artist work grid container*/
@@ -145,18 +178,44 @@ body {
     max-width: 284px;
     max-height: 345px;
     margin: 20px;
-    transition: .5s ease;
-    backface-visibility: hidden
+}
+.rene-portrait:hover  {
+    opacity: 0.3;   
 }
 .triss-portrait {
     max-width: 404px;
     max-height: 308px;
     margin: 20px;
+    opacity: 1;
+    transition: .5s ease; /*not workig*/
+    backface-visibility: hidden;
+  }
+.triss-portrait:hover  {
+    opacity: 0.3;   
 }
 .iris-portrait {
     max-width: 380px;
     max-height: 276px;
     margin: 20px;
+    backface-visibility: hidden;
+}
+.iris-portrait:hover {
+    opacity: 0.3;
+}
+.solo:hover {     
+    color: #29304A;
+}
+.ris:hover {
+    color: #29304A;
+}
+.art:hover {
+    color: #29304A;   
+}
+.font-color-dark {
+    color: #29304A;
+}
+.font-color-white {
+    color: #ffffff;
 }
 .grid_container_awork_reneimg{
     grid-area: 1/1/2/2;
@@ -182,7 +241,6 @@ body {
 .grid_container_awork_renetext {
     opacity: 0.3;
 }
-
 @media screen and (max-width: 900px){
     .rene-portrait {
         max-width: 184px;
@@ -211,124 +269,3 @@ body {
         max-height: 76px;
     }
     }
-
-/* footer*/
-footer {
-    width: 100%;
-    height: 400px;
-    background-color: #29304A;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.container_footer {
-    display:flex;
-    flex-direction: row;
-    width: 95%;
-} 
-a {
-    color: #FFFFFF;
-    text-decoration: none;
-    list-style-type: none; /*why is theree a dot?*/
-}
-a:visited{
-    color: #FFFFFF;  
-}
-.ul {
-    list-style-type: none; /*why is theree a dot?*/
-}
-.footer-column-left {
-    transform:
-        translateX(200px);
-}
-.footer-column-middle {
-    transform:
-        translateX(200px);
-}
-.footer-column-right {
-    transform:
-        translateX(200px);
-}
-
-/* footer form */
-.form_footer{
-    transform: 
-        translateX(250px);
-}
-.label_form {
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-    color: #FFFFFF;
-}
-.btn-footer {
-    max-width: 226xp;
-    max-height: 45px;
-    background-color: #AB7020;
-    color: #FFFFFF;
-    font-family: 'Arvo', serif;
-    font-size: 20px;
-}
-.btn-footer:hover {
-    background-color: #ca8a31;
-    transform: scaleY(1.2);
-}
-#email {
-    max-width: 226xp;
-    max-height: 45px;
-    margin-top: 13px;
-    margin-bottom: 13px;
-}
-.container_bottomfoot {
-    display: flex;
-    flex-direction: row;
-    justify-items: flex-end;
-}/* It don't work! the icons need to get down and split up!*/
-.all-rights {
-    display: flex;
-    justify-self: flex-start;
-    color: #FFFFFF;
-}
-.container_icon {
-    display: flex;
-    justify-content: space-around;
-}
-.fa-facebook-f{
-    color: #FFFFFF; 
-    margin: 20px;
-}
-.fa-twitter {
-    color: #FFFFFF;
-    margin: 20px;
-}
-.fa-linkedin-in {
-    color: #FFFFFF;   
-    margin: 20px;
-}
-.fa-pinterest-p {
-    color: #FFFFFF;     
-    margin: 20px;
-}
-@media screen and (max-width: 950px){
-    .footer-column-left {
-        transform:
-            translateX(100px);
-    }
-    .footer-column-middle {
-        transform:
-            translateX(100px);
-    }
-    .footer-column-right {
-        transform:
-            translateX(100px);
-    }
-    .form_footer{
-        transform: 
-            translateX(150px);
-    }
-}
-@media screen and (max-width: 850px){
-
-}
-/*end old footer*/
-
