@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/contact.css">
+    <script src="https://kit.fontawesome.com/c99908aa44.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&family=Lora&display=swap" rel="stylesheet"> 
     <title>Contact</title>
 </head>
 <body>
@@ -13,11 +17,40 @@
         <a class="nav__logo" href="index.html">
             <h1 class="logo">Bluemont gallery</h1>
         </a>
+        <div class="dropdown">
+            <a class="icon" onclick="dropNav()"><i class="fa-solid fa-ellipsis"></i></a>
+            <ul class="dropdown__content">
+                <li class="nav__li"><a class="nav__link" href="index.html">Art</a></li>
+                <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+                <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
         <ul class="nav__list">
             <li class="nav__li"><a class="nav__link" href="index.html">Art</a></li>
             <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
             <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
         </ul>
+        <script>
+            function dropNav() {
+              let drop = document.getElementById("drop-nav");
+              if (drop.className === "nav") {
+                drop.className += " responsive";
+              } else {
+                drop.className = "nav";
+              }
+            }
+            </script>
     </nav>
+    <header class="header">
+        <div class="header__beige-bg"></div>
+        <div class="header__container">
+            <div class="header__text">
+                <h1 class="header__headline">Contact us</h1>
+                <p class="header__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    Aenean commodo ligula eget dolor. Aenean massa. </p>
+            </div>
+            <div class="header__imgbox"><img class="header__img" src="../images/pexels-andrea-piacquadio-914922.jpg" alt="Contact us image"></div>
+        </div>
+    </header>
 </body>
 </html>

@@ -1,8 +1,16 @@
 .nav {
-    background-color: green;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
     min-height: 4vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+
+.dropdown {
+    display: none;
 }
 
 .nav__logo {
@@ -34,7 +42,14 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    min-width: 200px;
+    min-width: 270px;
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+    color: #29304A;
 }
 
 .nav__link {
@@ -46,4 +61,33 @@
     line-height: 25px;
     /* identical to box height */
     color: #29304A;
+}
+
+.nav__link:hover {
+    color: #5a6280;
+}
+
+@media screen and (max-width: 715px) {
+    .dropdown {
+        /* display: flex;
+        align-items: center; */
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown__content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+    }
+
+    .nav__list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    .logo { /*does not work*/
+        font-size: 25px;
+    }
 }

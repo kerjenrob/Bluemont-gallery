@@ -1,5 +1,4 @@
 .nav {
-  background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,11 +6,24 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
   min-height: 4vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+.dropdown {
+  display: none;
 }
 
 .nav__logo {
-  font-family: 'Lora';
+  font-family: "Lora";
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -25,7 +37,7 @@
 }
 
 .logo {
-  font-family: 'Lora';
+  font-family: "Lora";
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -48,12 +60,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 200px;
-}
-
-.nav__link {
-  text-decoration: none;
-  font-family: 'Arvo';
+  min-width: 270px;
+  font-family: "Arvo";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -61,4 +69,105 @@
   /* identical to box height */
   color: #29304A;
 }
-/*# sourceMappingURL=contact.css.map */
+
+.nav__link {
+  text-decoration: none;
+  font-family: "Arvo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to box height */
+  color: #29304A;
+}
+
+.nav__link:hover {
+  color: #5a6280;
+}
+
+@media screen and (max-width: 715px) {
+  .dropdown {
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+  }
+
+  .nav__list {
+    display: none;
+  }
+}
+@media screen and (max-width: 443px) {
+  .logo {
+    /*does not work*/
+    font-size: 25px;
+  }
+}
+.header__headline {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 67px;
+  color: #29304A;
+}
+
+.header__paragraph {
+  font-family: "Arvo";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgba(41, 48, 74, 0.76);
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header__beige-bg {
+  background-color: #DECAAF;
+  min-height: 50vh;
+  position: relative;
+}
+
+.header__container {
+  position: absolute;
+  bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.header__text {
+  max-width: 500px;
+  width: 100%;
+}
+
+.header__headline {
+  font-size: 50px;
+}
+
+.header__paragraph {
+  font-size: 18px;
+}
+
+.header__imgbox {
+  max-width: 481px;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.header__img {
+  width: 481px;
+  height: 327px;
+}

@@ -1,1 +1,67 @@
 @import 'nav';
+
+%cinzel {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 50px;
+    line-height: 67px;
+    color: #29304A;
+}
+
+%arvo {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(41, 48, 74, 0.76);
+}
+
+.header {
+    background-color: #fff;
+    // display: flex;
+    // justify-content: center;
+}
+
+.header__beige-bg {
+    background-color: #DECAAF;
+    min-height: 50vh;
+    position: relative;
+}
+
+.header__container {
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.header__text {
+    max-width: 500px;
+    width: 100%;
+}
+
+.header__headline {
+    @extend %cinzel;
+    font-size: 50px;
+}
+
+.header__paragraph {
+    @extend %arvo;
+    font-size: 18px;
+}
+
+.header__imgbox {
+    max-width: 481px;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.header__img {
+    width: 481px;
+    height: 327px;
+}
