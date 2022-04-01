@@ -145,3 +145,50 @@ a:visited {
     transform: translateX(150px);
   }
 }
+@media screen and (max-width: 850px) {
+  .footer-column-left {
+    transform: translateX(50px);
+  }
+
+  .footer-column-middle {
+    transform: translateX(50px);
+  }
+
+  .footer-column-right {
+    transform: translateX(50px);
+  }
+
+  .form_footer {
+    transform: translateX(100px);
+  }
+}
+@media screen and (max-width: 790px) {
+  .footer-column-left {
+    transform: translateX(10px);
+  }
+
+  .footer-column-middle {
+    transform: translateX(10px);
+  }
+
+  .footer-column-right {
+    transform: translateX(10px);
+  }
+
+  .form_footer {
+    transform: translateX(10px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .footer-column-left {
+    display: none;
+  }
+
+  .footer-column-middle {
+    display: none;
+  }
+
+  .footer-column-right {
+    display: none;
+  }
+}
