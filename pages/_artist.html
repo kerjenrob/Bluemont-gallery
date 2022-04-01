@@ -11,15 +11,30 @@
     <title>Artist</title>
 </head>
 <body>
-    <header>
-        <nav></nav>
-    </header>
+        <nav class="nav">
+            <a class="nav__logo" href="index.html">
+                <h1 class="logo">Bluemont gallery</h1>
+            </a>
+            <div class="dropdown">
+                <a class="icon" onclick="dropNav()"><i class="fa-solid fa-ellipsis"></i></a>
+                <ul class="dropdown__content">
+                    <li class="nav__li"><a class="nav__link" href="index.html">Art</a></li>
+                    <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+                    <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__li"><a class="nav__link" href="index.html">Art</a></li>
+                <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+                <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     <main class="main-artists">
 
         <div class="white-section">
             <h2 id="artist-rene">PERFECTIONIST</h2>
         </div>
-        <div  class="section-artists-one">
+        <div  class="section-artists-rene">
             <div>
                 <h2 class="renefont">RENE SOLO</h2>
                 <h4 class="renefont">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</h4>
@@ -35,7 +50,7 @@
             <h2 id="artist-triss">A GREAT IMPROVISER</h2>
         </div>
         
-        <div  class="section-artists-two">
+        <div  class="section-artists-triss">
             <div class="footer-left">
                 <h2 class="trissfont">TRISS RIS</h2>
                 <h4 class="trissfont">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</h4>
@@ -51,7 +66,7 @@
             <h2 id="artist-iris">SOFT FORMS</h2>
         </div>
 
-        <div  class="section-artists-three">
+        <div  class="section-artists-iris">
             <div class="footer-left">
                 <h2 class="irisfont">IRIS ART</h2>
                 <h4 class="irisfont">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa</h4>
@@ -70,8 +85,56 @@
 
 
     <footer>
-        
-    </footer>
+        <div class="logo">
+            <a href="/index.html"><p>Bluemont gallery</p></a>
+        </div>
 
+        <div class="container_footer">
+            <ul class="footer-column-left">
+<!--Fill in the links-->
+                <li class="footer-li"><a href="/pages/_collectionone.html"><h5>Art</h5></a></li>
+                <li class="footer-li"><a href="#"><h5>Collections</h5></a></li>
+                <li class="footer-li"><a href="/pages/_artist.html"><h5>Artists</h5></a></li>
+            </ul>
+            <ul class="footer-column-middle">
+                <li class="footer-li"><a href="/pages/_aboutus.html"><h5>About us</h5></a></li>
+                <li class="footer-li"><a href="#"><h5>Goals</h5></a></li>
+                <li class="footer-li"><a href="#"><h5>Staff</h5></a></li>
+            </ul>
+            <ul class="footer-column-right">
+                <li class="footer-li"><a href="/pages/_contact.html"><h5>Contact</h5></a></li>
+                <li class="footer-li"><a href="#"><h5>Find us</h5></a></li>
+            </ul> 
+            <ul>
+                <form action="" class="form_footer">
+                    <li><label for="email" class="label_form">JOIN OUR NEWSLETTER</label></li>
+                    <li><input type="email" id="email" placeholder="Enter email"></li>
+                    <li><button class="btn-footer" type="submit">Submit</button></li>
+                </form>
+            </ul> 
+        </div>
+
+        <div class="container_bottomfoot">
+            <div>
+                <h6 class="all-rights">All rights reserved 2022</h6>
+            </div>
+            <div class="container_icon">
+                <a href="https://sv-se.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/login/sv"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.pinterest.se/"><i class="fa fa-pinterest-p"></i></a>
+            </div>
+        </div>
+</footer>
+<script>
+        function dropNav() {
+          let drop = document.getElementById("drop-nav");
+          if (drop.className === "nav") {
+            drop.className += " responsive";
+          } else {
+            drop.className = "nav";
+          }
+        }
+        </script>
 </body>
 </html>
