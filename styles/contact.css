@@ -23,7 +23,7 @@
 }
 
 .nav__logo {
-  font-family: "Lora";
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -37,7 +37,7 @@
 }
 
 .logo {
-  font-family: "Lora";
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -61,7 +61,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-width: 270px;
-  font-family: "Arvo";
+  font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -72,7 +72,7 @@
 
 .nav__link {
   text-decoration: none;
-  font-family: "Arvo";
+  font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -88,29 +88,29 @@
 @media screen and (max-width: 715px) {
   .dropdown {
     /* display: flex;
-    align-items: center; */
+        align-items: center; */
     position: relative;
     display: inline-block;
   }
-
   .dropdown__content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
   }
-
   .nav__list {
     display: none;
   }
 }
+
 @media screen and (max-width: 443px) {
   .logo {
     /*does not work*/
     font-size: 25px;
   }
 }
+
 .header__headline {
-  font-family: "Cinzel";
+  font-family: 'Cinzel';
   font-style: normal;
   font-weight: 400;
   line-height: 67px;
@@ -118,7 +118,7 @@
 }
 
 .header__paragraph {
-  font-family: "Arvo";
+  font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
@@ -171,3 +171,49 @@
   width: 481px;
   height: 327px;
 }
+
+.contact__blue {
+  background-color: #29304A;
+  min-height: 50vh;
+  position: relative;
+}
+
+.contact__blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form {
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 505px;
+  width: 100%;
+  height: 248px;
+}
+
+.form__enter-info {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #9DBEBB;
+  background-color: #BE0909;
+  color: #FFF;
+  margin-bottom: 20px;
+  padding: 5px;
+  height: 50px;
+}
+
+.form__enter-info .message {
+  height: 248px;
+}
+/*# sourceMappingURL=contact.css.map */

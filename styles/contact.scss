@@ -65,3 +65,59 @@
     width: 481px;
     height: 327px;
 }
+
+.contact__blue {
+    background-color: #29304A;
+    min-height: 50vh;
+    position: relative;
+}
+
+//FORM
+
+.contact__blue {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    max-width: 505px;
+    width: 100%;
+    height: 248px;
+}
+
+// .form__label {
+//     background-color: blue;
+// }
+
+.form__enter-info {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #9DBEBB;
+    background-color: #BE0909;
+    color: #FFF;
+    margin-bottom: 20px;
+    padding: 5px;
+    height: 50px;
+}
+
+.form__enter-info .message {
+    height: 248px;
+}
+
+// .form__enter-info {
+//     max-width: 503px;
+//     width: 100%;
+//     height: 63px;
+//     border: none;
+//     padding: 0px;
+//     margin-right: -4px;
+//     text-align: center;
+//     @extend %josefin-regular;
+//     font-size: 14px;
+//     letter-spacing: 2.8px;
+//     color: #999999;
+// }
