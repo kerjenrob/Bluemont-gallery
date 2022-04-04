@@ -109,7 +109,7 @@
   }
 }
 
-.header__headline {
+.main-headline {
   font-family: 'Cinzel';
   font-style: normal;
   font-weight: 400;
@@ -117,7 +117,7 @@
   color: #29304A;
 }
 
-.header__paragraph, .form__enter-info {
+.paragraph, .form__enter-info, .findus__paragraph {
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
@@ -125,50 +125,54 @@
   color: rgba(41, 48, 74, 0.76);
 }
 
-.header {
-  background-color: #fff;
+.margin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1113px;
+  width: 100%;
+  min-height: 443px;
+  overflow: visible;
 }
 
-.header__beige-bg {
+.header {
   background-color: #DECAAF;
   height: 361px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   overflow: visible;
 }
 
-.header__container {
+.header-style {
   position: absolute;
   top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 2000px;
-  width: 100%;
 }
 
-.header__text {
-  max-width: 500px;
-  width: 100%;
-}
-
-.header__headline {
+.main-headline {
   font-size: 50px;
 }
 
-.header__paragraph {
+.paragraph {
   font-size: 18px;
-  max-width: 300px;
+  max-width: 450px;
   width: 100%;
-  margin-left: 7px;
+  margin-left: 5px;
 }
 
 .header__imgbox {
   max-width: 481px;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .header__img {
@@ -205,7 +209,6 @@
 }
 
 .form {
-  background-color: green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,9 +231,48 @@
   border-bottom: 1px solid #9DBEBB;
   font-size: 20px;
   color: rgba(41, 48, 74, 0.61);
+  padding: 11px 0px 11px 19px;
 }
 
 .message {
   height: 168px;
+}
+
+.findus__beige-bg {
+  height: 335px;
+  background-color: #EDE6DC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  overflow: visible;
+  margin-top: 80px;
+}
+
+.findus {
+  text-align: center;
+  margin-top: 94px;
+}
+
+.bottom-style {
+  position: absolute;
+  top: -50px;
+}
+
+.findus__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+}
+
+.findus__paragraph {
+  font-size: 18px;
 }
 /*# sourceMappingURL=contact.css.map */
