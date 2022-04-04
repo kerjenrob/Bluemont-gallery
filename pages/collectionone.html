@@ -16,6 +16,53 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <nav class="nav">
+        <a class="nav__logo" href="index.html">
+            <h1 class="logo">Bluemont gallery</h1>
+        </a>
+        <div class="dropdown">
+            <a class="icon" onclick="dropNav()"><i class="fa-solid fa-ellipsis"></i></a>
+            <ul class="dropdown__content">
+                <li class="nav__li"><a class="nav__link" href="collectionone.html">Art</a></li>
+                <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+                <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__li"><a class="nav__link" href="collectionone.html">Art</a></li>
+            <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+            <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <script>
+            function dropNav() {
+              let drop = document.getElementById("drop-nav");
+              if (drop.className === "nav") {
+                drop.className += " responsive";
+              } else {
+                drop.className = "nav";
+              }
+            }
+            </script>
+    </nav>
+    <section class="header">
+        <div class="margin">
+                <h1 class="main-headline">Star gaze collection</h1>
+                <div class="header__text">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. </p>
+                </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv"></div>
+            <div class="gallery__imgdiv artist"><button class="gallery-btn" onclick="window.location.href='contact.html';">About the artist</button></div>
+        </div>
+    </section>
 </body>
 </html>

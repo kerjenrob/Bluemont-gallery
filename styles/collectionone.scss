@@ -1,1 +1,90 @@
 @import 'nav';
+
+%cinzel {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 50px;
+    line-height: 67px;
+    color: #29304A;
+}
+
+%arvo {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(41, 48, 74, 0.76);
+}
+
+.margin {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    // justify-content: center;
+    // max-width: 1113px;
+    // width: 100%;
+    min-height: 443px;
+    // overflow: visible;
+}
+
+.header {
+    background-color: #DECAAF;
+    height: 361px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // overflow: visible;
+}
+
+// .header-style {
+//     position: absolute;
+//     top: 100px;
+// }
+
+.main-headline {
+    @extend %cinzel;
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.header__text {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph {
+    @extend %arvo;
+    font-size: 18px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+}
+
+// GALLERY
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-top: 80px;
+    position: absolute;
+    // left: 0px;
+    top: 100px;
+    z-index: 1;
+}
+
+.gallery__imgdiv {
+    background-color: #29304A;
+    width: 260px;
+    height: 260px;
+}
+
+.artist {
+    background-color: #29304A;
+    width: 260px;
+    height: 210px;
+}
