@@ -27,16 +27,18 @@
 
 .header__beige-bg {
     background-color: #DECAAF;
-    min-height: 50vh;
+    height: 361px;
     position: relative;
+    overflow: visible;
+    // margin-bottom: 70px;
 }
 
 .header__container {
     position: absolute;
-    bottom: 80px;
+    top: 100px;
     display: flex;
     justify-content: space-between;
-    max-width: 1500px;
+    max-width: 2000px;
     width: 100%;
 }
 
@@ -53,6 +55,9 @@
 .header__paragraph {
     @extend %arvo;
     font-size: 18px;
+    max-width: 300px;
+    width: 100%;
+    margin-left: 7px;
 }
 
 .header__imgbox {
@@ -72,20 +77,36 @@
     position: relative;
 }
 
+// WHITE SPACE
+
+.white-space {
+    height: 148px;
+}
+
 //FORM
 
+.contact {
+    text-align: center;
+    // margin-top: 70px;
+    margin-bottom: 14px;
+}
+
 .contact__blue {
+    height: 414px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .form {
     background-color: green;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 505px;
     width: 100%;
-    height: 248px;
+    min-height: 291px; 
+    // margin-bottom: 59px;
 }
 
 // .form__label {
@@ -93,19 +114,19 @@
 // }
 
 .form__enter-info {
+    @extend %arvo;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #9DBEBB;
-    background-color: #BE0909;
-    color: #FFF;
-    margin-bottom: 20px;
-    padding: 5px;
-    height: 50px;
+    font-size: 20px;
+    color: rgba(41, 48, 74, 0.61);
+    // padding: 11px 0px 11px 19px;
+    // margin-bottom: 16px;
 }
 
-.form__enter-info .message {
-    height: 248px;
+.message {
+    height: 168px;
 }
 
 // .form__enter-info {

@@ -117,7 +117,7 @@
   color: #29304A;
 }
 
-.header__paragraph {
+.header__paragraph, .form__enter-info {
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
@@ -131,20 +131,21 @@
 
 .header__beige-bg {
   background-color: #DECAAF;
-  min-height: 50vh;
+  height: 361px;
   position: relative;
+  overflow: visible;
 }
 
 .header__container {
   position: absolute;
-  bottom: 80px;
+  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1500px;
+  max-width: 2000px;
   width: 100%;
 }
 
@@ -159,6 +160,9 @@
 
 .header__paragraph {
   font-size: 18px;
+  max-width: 300px;
+  width: 100%;
+  margin-left: 7px;
 }
 
 .header__imgbox {
@@ -178,13 +182,26 @@
   position: relative;
 }
 
+.white-space {
+  height: 148px;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
 .contact__blue {
+  height: 414px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .form {
@@ -196,9 +213,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   max-width: 505px;
   width: 100%;
-  height: 248px;
+  min-height: 291px;
 }
 
 .form__enter-info {
@@ -206,14 +226,11 @@
   border-right: none;
   border-left: none;
   border-bottom: 1px solid #9DBEBB;
-  background-color: #BE0909;
-  color: #FFF;
-  margin-bottom: 20px;
-  padding: 5px;
-  height: 50px;
+  font-size: 20px;
+  color: rgba(41, 48, 74, 0.61);
 }
 
-.form__enter-info .message {
-  height: 248px;
+.message {
+  height: 168px;
 }
 /*# sourceMappingURL=contact.css.map */
