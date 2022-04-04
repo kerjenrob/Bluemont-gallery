@@ -117,7 +117,7 @@
   color: #29304A;
 }
 
-.paragraph, .form__enter-info, .findus__paragraph {
+.paragraph, .form__enter-info, .form-btn, .findus__paragraph {
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
@@ -232,10 +232,19 @@
   font-size: 20px;
   color: rgba(41, 48, 74, 0.61);
   padding: 11px 0px 11px 19px;
+  margin-bottom: 16px;
 }
 
 .message {
   height: 168px;
+}
+
+.form-btn {
+  margin-top: 5px;
+  background: #AB7020;
+  border: none;
+  height: 63px;
+  border: none;
 }
 
 .findus__beige-bg {
