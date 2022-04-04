@@ -79,12 +79,58 @@
 
 .gallery__imgdiv {
     background-color: #29304A;
-    width: 260px;
-    height: 260px;
+    max-width: 250px;
+    height: 250px;
+    width: 100%;
+    // overflow-y: hidden;
+    overflow: hidden;
 }
 
-.artist {
-    background-color: #29304A;
-    width: 260px;
+.learn-more {
     height: 210px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.artist-img {
+    width: 100%;
+}
+
+.gallery-btn {
+    background: #AB7020;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    @extend %arvo;
+    height: 42px;
+    width: 100%;
+    border: none;
+}
+
+// / .artist {
+// //     height: 210px;
+// //     width: 260px;
+// // }
+
+// WHITE SPACE
+
+.white-space {
+    height: 210px;
+    width: 250px;
+}
+
+
+
+// BEIGE
+
+.beige__container {
+    display: flex;
+    align-content: flex-end;
+    height: 70vh;
+}
+
+.beige {
+    background-color: #EDE6DC;
+    height: 400px;
+    width: 100%;
 }
