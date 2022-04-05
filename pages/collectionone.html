@@ -16,34 +16,41 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="drop-nav">
         <a class="nav__logo" href="index.html">
             <h1 class="logo">Bluemont gallery</h1>
         </a>
-        <div class="dropdown">
-            <a class="icon" onclick="dropNav()"><i class="fa-solid fa-ellipsis"></i></a>
-            <ul class="dropdown__content">
-                <li class="nav__li"><a class="nav__link" href="collectionone.html">Art</a></li>
-                <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
-                <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+        <ul class="nav__menu">
+            <div class="dropdown">
+            <button class="dropbtn" onclick="window.location.href='contact.html';">Gallery
+                <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <ul class="dropdown-content">
+                <li><a href="#artists">Artists</a></li>
+                <li><a href="#collection1">Collection Stargaze</a></li>
+                <li><a href="#collection2">Collection Lemonade</a></li>
+                <li><a href="#collection3">Collection Sunshine</a></li>
             </ul>
-        </div>
-        <ul class="nav__list">
-            <li class="nav__li"><a class="nav__link" href="collectionone.html">Art</a></li>
-            <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
-            <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+            </div> 
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <!-- <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+            <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li> -->
+            <a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a>
         </ul>
-        <script>
-            function dropNav() {
-              let drop = document.getElementById("drop-nav");
-              if (drop.className === "nav") {
-                drop.className += " responsive";
-              } else {
-                drop.className = "nav";
-              }
-            }
-            </script>
     </nav>
+      
+      <script>
+      function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav";
+        }
+      }
+      </script>
+     
     <section class="header">
         <div class="margin">
                 <h1 class="main-headline">Star gaze collection</h1>
