@@ -6,15 +6,16 @@ body {
     margin: 20px;
     background-color: #E5E5E5;
 }
-/*fonts*/
+/*fonts
 .logo-footer {
     font-family: 'Lora', serif;
-    font-size: 6vh;
+    font-size: 5vh;
     color: #FFFFFF;
     max-width: 500px;
     display: flex;
     justify-self: start;
     align-self: start;
+    margin-bottom: 2vh;
 }
 h2 {
     font-family: 'Cinzel', serif;
@@ -35,8 +36,73 @@ h6 {
     font-family: 'Arvo', serif;
     font-size: 2vh;
 }
-/*end fonts*/
+end fonts*/
 
+/* px fonts*/
+
+.logo-footer {
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    color: #FFFFFF;
+    max-width: 500px;
+    display: flex;
+    justify-self: flex-start;
+}
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    font-style: normal;
+}
+h4 {
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-style: normal; 
+}
+h5 {
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+h6 {
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+}
+@media screen and (max-width: 900px){
+    .logo {
+        font-size: 28px;
+    }
+    .h2 {
+        font-size: 30px;
+    }
+    .h4 {
+        font-size: 16px;
+    }
+    .h5 {
+        font-size: 15px;
+    }
+    .h6 {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 600px){
+    .logo {
+        font-size: 24px;
+    }
+    .h2 {
+        font-size: 20px;
+    }
+    .h4 {
+        font-size: 14px;
+    }
+    .h5 {
+        font-size: 15px;
+    }
+    .h6 {
+        font-size: 11px;
+    }
+}
+
+/* end pxfonts*/
 /* artist.html*/
 .main-artists {
  display: flex;
@@ -61,7 +127,7 @@ flex-direction: column;
 .renefont {
     color: #29304A;
     max-width: 500px;
-    margin: 20px;
+    margin: 2vh;
 }
 .btn-artist {
     max-width: 400xp;
@@ -121,7 +187,10 @@ flex-direction: column;
         translate(40px, 80px);
 }
 @media screen and (max-width: 900px){
-    .rene-portrait-transform {
+    .white-section {
+        height: 350px;
+    }
+        .rene-portrait-transform {
         max-width: 184px;
         width: 100%;
         max-height: 245px;
@@ -138,6 +207,10 @@ flex-direction: column;
     }
     }
 @media screen and (max-width: 600px){
+    .white-section {
+        height: 300px;
+    }
+
     .rene-portrait-transform {
         max-width: 84px;
         width: 100%;
@@ -154,6 +227,11 @@ flex-direction: column;
         max-height: 76px;
     }
     }
+@media screen and (max-width: 600px){
+    .white-section {
+        height: 250px;
+    }
+}
 /*end artists*/
 
 //start artist work
