@@ -23,7 +23,7 @@
     display: flex;
     align-content: center;
     justify-content: space-between;
-    max-width: 1113px;
+    max-width: 90vw;
     width: 100%;
     min-height: 443px;
     overflow: visible;
@@ -56,7 +56,7 @@
 .paragraph {
     @extend %arvo;
     font-size: 18px;
-    max-width: 450px;
+    max-width: 30vw;
     width: 100%;
     margin-left: 5px;
 }
@@ -188,3 +188,23 @@
     @extend %arvo;
     font-size: 18px;
 }
+
+@media screen and (max-width: 920px) {
+    .main-headline {
+        font-size: 35px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        // max-width: 300px;
+        // width: 100%;
+    }
+
+    .findus__imgbox {
+        margin-right: 20px;
+    }
+}
+
+// @media screen and (max-width: 827px) {
+
+// }

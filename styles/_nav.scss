@@ -3,9 +3,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
     min-height: 4vw;
     margin: 20px 7vw 20px 7vw;
 }
+
+.nav__link:hover {
+    color: #29304a20;
+ }
+  
+ .nav__link:active { 
+    color: #52B788;
+    // doesn't work
+ }
 
 .dropdown {
     display: none;

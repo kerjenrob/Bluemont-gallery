@@ -12,8 +12,17 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
   min-height: 4vw;
   margin: 20px 7vw 20px 7vw;
+}
+
+.nav__link:hover {
+  color: #29304a20;
+}
+
+.nav__link:active {
+  color: #52B788;
 }
 
 .dropdown {
@@ -191,6 +200,11 @@
   overflow: hidden;
 }
 
+.gallery__imgdiv:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .learn-more {
   height: 210px;
   width: 250px;
@@ -211,6 +225,10 @@
   border: none;
 }
 
+.gallery-btn:hover {
+  background: #54360d;
+}
+
 .white-space {
   height: 250px;
 }
@@ -221,7 +239,7 @@
   display: flex;
   -ms-flex-line-pack: end;
       align-content: flex-end;
-  height: 70vh;
+  height: 40vh;
 }
 
 .beige {
