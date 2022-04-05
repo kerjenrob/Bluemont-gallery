@@ -1,6 +1,37 @@
+/*fonts*/
+.logo-footer {
+    font-family: 'Lora', serif;
+    font-size: 6vh;
+    color: #FFFFFF;
+    max-width: 500px;
+    display: flex;
+    justify-self: start;
+    align-self: start;
+}
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 8vh;
+    font-style: normal;
+}
+h4 {
+    font-family: 'Arvo', serif;
+    font-size: 3vh;
+    font-style: normal; 
+}
+h5 {
+    font-family: 'Arvo', serif;
+    font-size: 3vh;
+    color: #FFFFFF;
+}
+h6 {
+    font-family: 'Arvo', serif;
+    font-size: 2vh;
+}
+/*end fonts*/
+
 footer {
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-color: #29304A;
     padding: 20px;
     display: flex;
@@ -22,25 +53,28 @@ a:visited{
 .container_footer li {
     list-style-type: none;
 }
+.footer-li {
+    margin: 10px;
+}
 .footer-li:hover {
     transform: scale(1.2);
 }
 .footer-column-left {
     transform:
-        translateX(200px);
+        translateX(300px);
 }
 .footer-column-middle {
     transform:
-        translateX(200px);
+        translateX(300px);
 }
 .footer-column-right {
     transform:
-        translateX(200px);
+        translateX(300px);
 }
 /* footer form */
 .form_footer{
     transform: 
-        translateX(250px);
+        translateX(350px);
 }
 .label_form {
     font-family: 'Cinzel', serif;
