@@ -23,7 +23,8 @@
     display: flex;
     align-content: center;
     justify-content: space-between;
-    max-width: 1150px;
+    // max-width: 1550px;
+    max-width: 85vw;
     width: 100%;
     min-height: 443px;
     overflow: visible;
@@ -43,14 +44,22 @@
     top: 100px;
 }
 
-// .header__text {
-//     max-width: 500px;
-//     width: 100%;
-// }
+.header__text {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-arrow-down {
+    margin-bottom: 80px;
+}
 
 .main-headline {
     @extend %cinzel;
-    font-size: 50px;
+    font-size: 70px;
+    margin-bottom: 30px;
 }
 
 .paragraph {
@@ -59,6 +68,10 @@
     max-width: 450px;
     width: 100%;
     margin-left: 5px;
+}
+
+.fa-arrow-down {
+    margin-top: 50px;
 }
 
 // .header__imgbox {
@@ -82,7 +95,7 @@
 // WHITE SPACE
 
 .white-space {
-    height: 148px;
+    height: 500px;
 }
 
 //FORM
@@ -195,7 +208,26 @@
 //     width: auto;
 // }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1670px) {
+    .header__img {
+        background-image: url(../images/big-contact.jpg);
+        max-width: 700px;
+        width: 100%px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+   .main-headline {
+       font-size: 60px;
+   }
+
+   .paragraph {
+        max-width: 360px;
+        width: 100%;
+ }
+}
+
+@media screen and (max-width: 1330px) {
     .header__img {
         background-image: url(../images/medium-contact.jpg);
         max-width: 500px;
@@ -205,11 +237,11 @@
     .paragraph {
        font-size: 16px;
        max-width: 300px;
-    width: 100%;
+        width: 100%;
     }
 
     .margin {
-        max-width: 900px;
+        max-width: 950px;
         width: 100%;
     }
 
@@ -218,50 +250,67 @@
     }
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1070px) {
+
+    .main-headline {
+        font-size: 40px;
+    } 
+
     .header__img {
-        background-image: url(../images/small-contact.jpg);
-        max-width: 300px;
+        background-image: url(../images/medsmall-contact.jpg);
+        max-width: 400px;
         width: 100%px;
     }
 
-    // .paragraph {
-    //    font-size: 16px;
-    //    max-width: 300px;
-    // width: 100%;
-    // }
-
-    .margin {
-        max-width: 700px;
-        width: 100%;
+    .header__text {
+        margin-top: 10px;
     }
 
-    // .white-space {
-    //     height: 148px;
-    // }
+    .margin {
+        max-width: 750px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 850px) {
-    .main-headline {
-        font-size: 35px;
-    }
-
-    .paragraph {
-        font-size: 16px;
-        max-width: 250px;
-        width: 100%;
+    .header__img {
+        background-image: url(../images/medsmall-contact.jpg);
+        max-width: 300px;
+        width: 100%px;
     }
 
     .margin {
         max-width: 600px;
         width: 100%;
     }
-
-    .findus__imgbox {
-        margin-right: 20px;
-    }
 }
 
-// @media screen and (max-width: 827px) {
+// @media screen and (max-width: 850px) {
+//     .main-headline {
+//         font-size: 35px;
+//     }
 
+//     .paragraph {
+//         font-size: 16px;
+//         max-width: 250px;
+//         width: 100%;
+//     }
+
+//     .margin {
+//         max-width: 600px;
+//         width: 100%;
+//     }
+
+//     .findus__imgbox {
+//         margin-right: 20px;
+//     }
+// }
+
+// @media screen and (max-width: 690px) {
+//     .margin {
+//         display: flex;
+//         flex-direction: column-reverse;
+//         align-items: center;
+//         justify-content: flex-end;
+//     }
 // }

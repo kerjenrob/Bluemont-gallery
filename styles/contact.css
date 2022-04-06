@@ -114,7 +114,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .nav a:not(:first-child), .dropdown .dropbtn {
+  a.nav__link, a.dropbtn {
     /*att menyn inte ska synas*/
     display: none;
   }
@@ -127,10 +127,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .nav.responsive {
+  .nav_menu.responsive {
     position: relative;
+    display: block;
   }
-  .nav.responsive .icon {
+  .nav__menu.responsive .icon {
     /* att ikonen ska stanna i hörnet och inte följa med dropdown*/
     position: absolute;
     right: 0;
@@ -182,7 +183,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1150px;
+  max-width: 85vw;
   width: 100%;
   min-height: 443px;
   overflow: visible;
@@ -206,8 +207,30 @@
   top: 100px;
 }
 
+.header__text {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-arrow-down {
+  margin-bottom: 80px;
+}
+
 .main-headline {
-  font-size: 50px;
+  font-size: 70px;
+  margin-bottom: 30px;
 }
 
 .paragraph {
@@ -217,6 +240,10 @@
   margin-left: 5px;
 }
 
+.fa-arrow-down {
+  margin-top: 50px;
+}
+
 .contact__blue {
   background-color: #29304A;
   min-height: 50vh;
@@ -224,7 +251,7 @@
 }
 
 .white-space {
-  height: 148px;
+  height: 500px;
 }
 
 .contact {
@@ -324,7 +351,25 @@
   font-size: 18px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1670px) {
+  .header__img {
+    background-image: url(../images/big-contact.jpg);
+    max-width: 700px;
+    width: 100%px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .main-headline {
+    font-size: 60px;
+  }
+  .paragraph {
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1330px) {
   .header__img {
     background-image: url(../images/medium-contact.jpg);
     max-width: 500px;
@@ -336,7 +381,7 @@
     width: 100%;
   }
   .margin {
-    max-width: 900px;
+    max-width: 950px;
     width: 100%;
   }
   .white-space {
@@ -344,33 +389,33 @@
   }
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1070px) {
+  .main-headline {
+    font-size: 40px;
+  }
   .header__img {
-    background-image: url(../images/small-contact.jpg);
-    max-width: 300px;
+    background-image: url(../images/medsmall-contact.jpg);
+    max-width: 400px;
     width: 100%px;
   }
+  .header__text {
+    margin-top: 10px;
+  }
   .margin {
-    max-width: 700px;
+    max-width: 750px;
     width: 100%;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .main-headline {
-    font-size: 35px;
-  }
-  .paragraph {
-    font-size: 16px;
-    max-width: 250px;
-    width: 100%;
+  .header__img {
+    background-image: url(../images/medsmall-contact.jpg);
+    max-width: 300px;
+    width: 100%px;
   }
   .margin {
     max-width: 600px;
     width: 100%;
-  }
-  .findus__imgbox {
-    margin-right: 20px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

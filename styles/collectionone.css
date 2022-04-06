@@ -114,7 +114,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .nav a:not(:first-child), .dropdown .dropbtn {
+  a.nav__link, a.dropbtn {
     /*att menyn inte ska synas*/
     display: none;
   }
@@ -127,10 +127,11 @@
 }
 
 @media screen and (max-width: 600px) {
-  .nav.responsive {
+  .nav_menu.responsive {
     position: relative;
+    display: block;
   }
-  .nav.responsive .icon {
+  .nav__menu.responsive .icon {
     /* att ikonen ska stanna i hörnet och inte följa med dropdown*/
     position: absolute;
     right: 0;
