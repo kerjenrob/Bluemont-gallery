@@ -1,6 +1,5 @@
 body
 {
-    
     background-color: wheat;
 }
 .welcome
@@ -9,6 +8,7 @@ body
     color: #ddd;
     font-family: 'Cinzel', serif;
     text-align: center;
+    font-size: 45px;
 }
   input[type=text], input[type=password] {
   width: 98%;
@@ -36,13 +36,8 @@ button {
   width: 100%;
   opacity: 0.9;
 }
-
 button:hover {
   opacity:1;
-}
-.cancelbtn {
-  padding: 14px 20px;
-  background: #AB7020;
 }
 .signupbtn {
   
@@ -110,7 +105,34 @@ button:hover {
       max-width: 100%;
     }
   }
-  .welcome h1
+  .home_banner
   {
-    font-size: 65px;
+    font-family:'Cinzel', serif;
+    font-size: 45px;
+    color: #ddd;
+    background-color: #29304A;
+    text-align: center;
+  }
+  .link_btn
+  {
+    font-family:'Cinzel', serif;
+    font-size: 45px;
+    width:90%;
+    border-radius: 25px;
+  }
+  .link
+  {
+    background-color: #29304A;
+    text-align: center;
+  }
+  .home_container
+  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 5vw);
+    grid-gap: 15px;
+  }
+  .home_pictures
+  {
+    height:300px;
   }
