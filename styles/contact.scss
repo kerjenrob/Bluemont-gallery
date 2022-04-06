@@ -223,6 +223,8 @@
 //     width: auto;
 // }
 
+@import 'footer';
+
 @media screen and (max-width: 1795px) {
     .margin {
         max-width: 85vw;
@@ -234,7 +236,7 @@
     .header__img {
         background-image: url(../images/big-contact.jpg);
         max-width: 700px;
-        width: 100%px;
+        width: 100%;
     }
 
     .white-space {
@@ -267,7 +269,7 @@
     .header__img {
         background-image: url(../images/medium-contact.jpg);
         max-width: 500px;
-        width: 100%px;
+        width: 100%;
     }
 
     .paragraph {
@@ -299,7 +301,7 @@
     .header__img {
         background-image: url(../images/medsmall-contact.jpg);
         max-width: 400px;
-        width: 100%px;
+        width: 100%;
     }
 
     .header__text {
@@ -333,7 +335,7 @@
     .header__img {
         background-image: url(../images/medsmall-contact.jpg);
         max-width: 300px;
-        width: 100%px;
+        width: 100%;
     }
 
     .margin {

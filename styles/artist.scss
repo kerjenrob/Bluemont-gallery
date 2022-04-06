@@ -1,11 +1,11 @@
-@use 'footer';
-@use 'nav';
+@import 'navbar';
 
 body {
     width: 100%;
     margin: 20px;
     background-color: #E5E5E5;
 }
+
 /* fonts*/
 .logo-footer {
     font-family: 'Lora', serif;
@@ -225,6 +225,8 @@ width: 100%;
     height: 200px;
     background-color: #E5E5E5;
 }
+@import 'footer';
+
 @media screen and (max-width: 1300px){
     .white-section {
         max-height: 350px;
@@ -258,6 +260,7 @@ width: 100%;
     .logo {
         font-size: 28px;
     }
+    
     .h2 {
         font-size: 30px;
     }
