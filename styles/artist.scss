@@ -6,9 +6,7 @@ body {
     margin: 20px;
     background-color: #E5E5E5;
 }
-
 /* fonts*/
-
 .logo-footer {
     font-family: 'Lora', serif;
     font-size: 34px;
@@ -209,10 +207,10 @@ width: 100%;
      max-height: 345px;
  
      margin: 20px;
-   }
+}
  .triss-portrait:hover  {
      opacity: 0.3;   
- }
+}
 .font-color-white {
     color: #ffffff;
 }
@@ -222,7 +220,6 @@ width: 100%;
 .font-color-dark {
     color: #29304A;
 }
-
 .white-section-small {
     width: 100%;
     height: 200px;
@@ -321,7 +318,6 @@ width: 100%;
     .section-artistwork-artist {
         height: 400px;
     }
-    
 }
 @media screen and (max-width: 600px){
     .logo {
@@ -348,7 +344,7 @@ width: 100%;
         max-width: 204px;
         width: 100%;
         max-height: 108px;
-        }
+    }
     .iris-portrait-transform {
         max-width: 180px;
         width: 100%;
@@ -360,11 +356,11 @@ width: 100%;
     .rene-portrait {
         max-width: 64px;
         max-height: 125px;
-     }
+    }
     .triss-portrait {
         max-width: 84px;
         max-height: 88px;
-        }
+    }
     .iris-portrait {
         max-width: 160px;
         max-height: 56px;
