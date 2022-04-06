@@ -239,113 +239,107 @@ body {
   background-color: #E5E5E5;
 }
 
-/*fonts
-.logo-footer {
-    font-family: 'Lora', serif;
-    font-size: 5vh;
-    color: #FFFFFF;
-    max-width: 500px;
-    display: flex;
-    justify-self: start;
-    align-self: start;
-    margin-bottom: 2vh;
-}
-h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 8vh;
-    font-style: normal;
-}
-h4 {
-    font-family: 'Arvo', serif;
-    font-size: 3vh;
-    font-style: normal; 
-}
-h5 {
-    font-family: 'Arvo', serif;
-    font-size: 3vh;
-    color: #FFFFFF;
-}
-h6 {
-    font-family: 'Arvo', serif;
-    font-size: 2vh;
-}
-end fonts*/
-/* px fonts*/
+/*fonts*/
 .logo-footer {
   font-family: "Lora", serif;
-  font-size: 34px;
+  font-size: 5vh;
   color: #FFFFFF;
   max-width: 500px;
   display: flex;
-  justify-self: flex-start;
+  justify-self: start;
+  align-self: start;
   margin-bottom: 2vh;
 }
 
 h2 {
   font-family: "Cinzel", serif;
-  font-size: 50px;
+  font-size: 8vh;
   font-style: normal;
 }
 
 h4 {
   font-family: "Arvo", serif;
-  font-size: 18px;
+  font-size: 3vh;
   font-style: normal;
 }
 
 h5 {
   font-family: "Arvo", serif;
-  font-size: 20px;
+  font-size: 3vh;
   color: #FFFFFF;
 }
 
 h6 {
   font-family: "Arvo", serif;
-  font-size: 16px;
+  font-size: 2vh;
 }
 
-@media screen and (max-width: 900px) {
-  .logo {
-    font-size: 28px;
-  }
-
-  .h2 {
-    font-size: 30px;
-  }
-
-  .h4 {
-    font-size: 16px;
-  }
-
-  .h5 {
-    font-size: 15px;
-  }
-
-  .h6 {
-    font-size: 11px;
-  }
+/*end fonts*/
+/* px fonts*/
+/*
+.logo-footer {
+    font-family: 'Lora', serif;
+    font-size: 34px;
+    color: #FFFFFF;
+    max-width: 500px;
+    display: flex;
+    justify-self: flex-start;
+    margin-bottom: 2vh;
 }
-@media screen and (max-width: 600px) {
-  .logo {
-    font-size: 24px;
-  }
-
-  .h2 {
+h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    font-style: normal;
+}
+h4 {
+    font-family: 'Arvo', serif;
+    font-size: 18px;
+    font-style: normal; 
+}
+h5 {
+    font-family: 'Arvo', serif;
     font-size: 20px;
-  }
-
-  .h4 {
-    font-size: 14px;
-  }
-
-  .h5 {
-    font-size: 15px;
-  }
-
-  .h6 {
-    font-size: 11px;
-  }
+    color: #FFFFFF;
 }
+h6 {
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+}
+@media screen and (max-width: 900px){
+    .logo {
+        font-size: 28px;
+    }
+    .h2 {
+        font-size: 30px;
+    }
+    .h4 {
+        font-size: 16px;
+    }
+    .h5 {
+        font-size: 15px;
+    }
+    .h6 {
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 600px){
+    .logo {
+        font-size: 24px;
+    }
+    .h2 {
+        font-size: 20px;
+    }
+    .h4 {
+        font-size: 14px;
+    }
+    .h5 {
+        font-size: 15px;
+    }
+    .h6 {
+        font-size: 11px;
+    }
+}
+
 /* end pxfonts*/
 /* artist.html*/
 .main-artists {
