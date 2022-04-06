@@ -113,7 +113,7 @@
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   a.nav__link, a.dropbtn {
     /*att menyn inte ska synas*/
     display: none;
@@ -126,7 +126,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .nav_menu.responsive {
     position: relative;
     display: block;
@@ -137,20 +137,20 @@
     right: 0;
     top: 0;
   }
-  .nav.responsive a {
+  .nav__menu.responsive a {
     /*gör att menyn blir en dropdown block, utan den syns bara dropdon knappen*/
     float: none;
     display: block;
     text-align: left;
   }
-  .nav.responsive .dropdown {
+  .nav__menu.responsive .dropdown {
     /*gör att knappen blir en del av listan*/
     float: none;
   }
-  .nav.responsive .dropdown-content {
+  .nav__menu.responsive .dropdown-content {
     position: relative;
   }
-  .nav.responsive .dropdown .dropbtn {
+  .nav__menu.responsive .dropdown .dropbtn {
     /*gör att knappen visas*/
     display: block;
     width: 100%;
@@ -183,7 +183,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 85vw;
+  max-width: 1550px;
   width: 100%;
   min-height: 443px;
   overflow: visible;
@@ -314,7 +314,7 @@
 }
 
 .findus__beige-bg {
-  height: 335px;
+  height: 600px;
   background-color: #EDE6DC;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,7 +329,27 @@
 
 .findus {
   text-align: center;
-  margin-top: 94px;
+}
+
+.findus__imgbox {
+  width: 900px;
+  height: 600px;
+  margin-right: 30px;
+}
+
+.findus__space {
+  height: 230px;
+  margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
 }
 
 .bottom-style {
@@ -351,11 +371,21 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 1795px) {
+  .margin {
+    max-width: 85vw;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1670px) {
   .header__img {
     background-image: url(../images/big-contact.jpg);
     max-width: 700px;
     width: 100%px;
+  }
+  .white-space {
+    height: 350px;
   }
 }
 
@@ -387,6 +417,10 @@
   .white-space {
     height: 148px;
   }
+  .fa-arrow-down {
+    /*doesn't worrk*/
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -401,9 +435,22 @@
   .header__text {
     margin-top: 10px;
   }
+  .paragraph {
+    max-width: 250px;
+    width: 100%;
+  }
   .margin {
     max-width: 750px;
     width: 100%;
+  }
+  .findus__imgbox {
+    height: 400px;
+  }
+  .findus__beige-bg {
+    height: 450px;
+  }
+  .findus__space {
+    height: 20vw;
   }
 }
 
@@ -416,6 +463,70 @@
   .margin {
     max-width: 600px;
     width: 100%;
+  }
+  .header__text {
+    margin-top: 0px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .margin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .paragraph {
+    text-align: center;
+  }
+  .header__text {
+    margin-top: 20px;
+  }
+  .white-space {
+    height: 180px;
+  }
+  .main__headline {
+    margin-bottom: -20px;
+  }
+  .form {
+    max-width: 290px;
+    width: 100%;
+  }
+  .findus__imgbox {
+    width: 400px;
+    margin-right: 0px;
+  }
+  .findus__space {
+    margin-bottom: 10px;
+  }
+  .findus__beige-bg {
+    margin-top: 0px;
+  }
+  .findus__text {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .findus__imgbox {
+    height: 300px;
+    width: 300px;
+    margin-right: 0px;
+  }
+  .logo {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=contact.css.map */

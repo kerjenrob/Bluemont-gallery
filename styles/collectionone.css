@@ -113,7 +113,7 @@
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   a.nav__link, a.dropbtn {
     /*att menyn inte ska synas*/
     display: none;
@@ -126,7 +126,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .nav_menu.responsive {
     position: relative;
     display: block;
@@ -137,20 +137,20 @@
     right: 0;
     top: 0;
   }
-  .nav.responsive a {
+  .nav__menu.responsive a {
     /*gör att menyn blir en dropdown block, utan den syns bara dropdon knappen*/
     float: none;
     display: block;
     text-align: left;
   }
-  .nav.responsive .dropdown {
+  .nav__menu.responsive .dropdown {
     /*gör att knappen blir en del av listan*/
     float: none;
   }
-  .nav.responsive .dropdown-content {
+  .nav__menu.responsive .dropdown-content {
     position: relative;
   }
-  .nav.responsive .dropdown .dropbtn {
+  .nav__menu.responsive .dropdown .dropbtn {
     /*gör att knappen visas*/
     display: block;
     width: 100%;
