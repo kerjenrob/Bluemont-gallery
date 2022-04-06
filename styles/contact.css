@@ -8,7 +8,7 @@
 }
 
 .nav {
-  overflow: hidden;
+  max-height: 40px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,19 +56,14 @@
   color: #29304A;
 }
 
-.nav__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .nav .icon {
   display: none;
 }
 
-.dropdown {
+.dropdown li {
   float: left;
   overflow: hidden;
+  display: inline;
 }
 
 .dropdown .dropbtn {
@@ -83,6 +78,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 80px;
   background-color: #f9f9f9;
   min-width: 160px;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -127,30 +123,33 @@
 }
 
 @media screen and (max-width: 720px) {
-  .nav_menu.responsive {
+  .nav__menu.responsive {
     position: relative;
     display: block;
+    z-index: 1;
   }
   .nav__menu.responsive .icon {
     /* att ikonen ska stanna i hörnet och inte följa med dropdown*/
     position: absolute;
     right: 0;
-    top: 0;
+    top: 30px;
   }
   .nav__menu.responsive a {
     /*gör att menyn blir en dropdown block, utan den syns bara dropdon knappen*/
     float: none;
     display: block;
-    text-align: left;
+    z-index: 1;
   }
-  .nav__menu.responsive .dropdown {
+  .nav__menu.responsive .dropdown li {
     /*gör att knappen blir en del av listan*/
     float: none;
+    display: inline;
   }
   .nav__menu.responsive .dropdown-content {
     position: relative;
+    top: 1px;
   }
-  .nav__menu.responsive .dropdown .dropbtn {
+  .nav__menu.responsive .dropdown .dropbtn li {
     /*gör att knappen visas*/
     display: block;
     width: 100%;
