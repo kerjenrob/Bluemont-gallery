@@ -4,9 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/resert.css">
+    <link rel="stylesheet" href="/styles/artist.css">
+    <script src="https://kit.fontawesome.com/20dccfad68.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&family=Lora&display=swap" rel="stylesheet">
+    <title>Artists work</title>
 </head>
 <body>
+    <nav class="nav">
+        <a class="nav__logo" href="index.html">
+            <h1 class="logo">Bluemont gallery</h1>
+        </a>
+        <div class="dropdown">
+            <a class="icon" onclick="dropNav()"><i class="fa-solid fa-ellipsis"></i></a>
+            <ul class="dropdown__content">
+                <li class="nav__li"><a class="nav__link" href="index.html">Art</a></li>
+                <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+                <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__li"><a class="nav__link" href="index.html">Art</a></li>
+            <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
+            <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-artistwork">
+        <div class="white-section">
+            <h2 class="font-color-dark">VIEW OUR COLLECTION</h2>
+        </div>
+<!--remember to make id in collection-->
+        <div class="section-artistwork-collection">
+            <div class="colletion-section-img">
+                <a href="#rene-collection"><img class="collectionimg-rene" src="/images/collection/rene-collection.jpeg" alt="art from Rene Solo collection"></a>
+                <a href="#iris-collection"><img class="collectionimg-iris" src="/images/collection/iris-collection.jpg" alt="art from Iris Art colection"></a>
+                <a href="#triss-collection"><img class="collectionimg-triss" src="/images/collection/triss-collection.jpeg" alt="art from Triss Ris collection"></a>
+            </div>
+            <div class="colletion-section-text">
+                <a href="#rene-collection"><h2 class="text">Rene Solo</h2></a>
+                <a href="#iris-collection"><h2 class="text">Iris Art</h2></a>
+                <a href="#triss-collection"><h2 class="text">Triss Ris</h2></a>
+            </div>
+        </div>
+
+        <div class="white-section">
+            <h2 class="font-color-dark">MEET OUT ARTISTS</h2>
+        </div>
+<!--remember to make id in collection-->
+        <div class="section-artistwork-artist">
+            <div class="colletion-section-img">
+                <a href="/pages/_artist.html#artist-rene"><img class="rene-portrait" src="/images/artists/rene-portrait.jpg" alt="Portrait of Rene Solo"></a>
+                <a href="/pages/_artist.html#artist-iris"><img class="iris-portrait" src="/images/artists/iris-portrait.jpg" alt="Portrait of Iris Art"></a>
+                <a href="/pages/_artist.html#artist-triss"><img class="triss-portrait" src="/images/artists/triss-portrait.jpg" alt="Portrait of Triss Ris"></a>
+            </div>
+            <div class="colletion-section-text">
+                <a href="/pages/_artist.html#artist-rene"><h2 class="font-color-white" >RENE SOLO</h2></a>
+                <a href="/pages/_artist.html#artist-iris"><h2 class="font-color-white">IRIS ART</h2></a>
+                <a href="/pages/_artist.html#artist-triss"><h2 class="font-color-white">TRISS RIS</h2></a>
+            </div>
+        </div>  
+
+        <div class="white-section-small">
+        </div>
+    </main>
+    <footer>
+            <div class="logo-footer">
+                <a href="/index.html"><p>Bluemont gallery</p></a>
+            </div>
     
+            <div class="container_footer">
+                <ul class="footer-column-left">
+    <!--make id and fill in the links-->
+                    <li class="footer-li"><a href="/pages/_artistworks.html"><h5>Art</h5></a></li>
+                    <li class="footer-li"><a href="/pages/_collectionone.html"><h5>Collections</h5></a></li>
+                    <li class="footer-li"><a href="/pages/_artist.html"><h5>Artists</h5></a></li>
+                </ul>
+                <ul class="footer-column-middle">
+                    <li class="footer-li"><a href="/pages/_aboutus.html"><h5>About us</h5></a></li>
+                    <li class="footer-li"><a href="#goals"><h5>Goals</h5></a></li>
+                    <li class="footer-li"><a href="#staff"><h5>Staff</h5></a></li>
+                </ul>
+                <ul class="footer-column-right">
+                    <li class="footer-li"><a href="/pages/_contact.html"><h5>Contact</h5></a></li>
+                    <li class="footer-li"><a href="#findus"><h5>Find us</h5></a></li>
+                </ul> 
+                <ul>
+                    <form action="" class="form_footer">
+                        <li><label for="email" class="label_form">JOIN OUR NEWSLETTER</label></li>
+                        <li><input type="email" id="email" placeholder="Enter email"></li>
+                        <li><button class="btn-footer" type="submit">Submit</button></li>
+                    </form>
+                </ul> 
+            </div>
+    
+            <div class="container_bottomfoot">
+                <div>
+                    <h6 class="all-rights">All rights reserved 2022</h6>
+                </div>
+                <div class="container_icon">
+                    <a href="https://sv-se.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/login/sv"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.pinterest.se/"><i class="fa fa-pinterest-p"></i></a>
+                </div>
+            </div>
+    </footer>
+    <script>
+      
+    </script>
 </body>
 </html>
