@@ -16,34 +16,37 @@
     <title>Contact</title>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav" id="drop-nav">
         <a class="nav__logo" href="index.html">
             <h1 class="logo">Bluemont gallery</h1>
         </a>
-        <div class="dropdown">
-            <a class="icon" onclick="dropNav()"><i class="fa-solid fa-ellipsis"></i></a>
-            <ul class="dropdown__content">
-                <li class="nav__li"><a class="nav__link" href="collectionone.html">Art</a></li>
-                <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
-                <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <ul class="nav__list">
-            <li class="nav__li"><a class="nav__link" href="collectionone.html">Art</a></li>
-            <li class="nav__li"><a class="nav__link" href="index.html">About us</a></li>
-            <li class="nav__li"><a class="nav__link" href="contact.html">Contact</a></li>
+        <ul class="nav__menu">
+            <ul class="dropdown">
+                <li><a class="dropbtn" href="./contact.html">Gallery</a></li>
+                <ul class="dropdown-content">
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#collection1">Collection Stargaze</a></li>
+                    <li><a href="#collection2">Collection Lemonade</a></li>
+                    <li><a href="#collection3">Collection Sunshine</a></li>
+                </ul>
+            </ul> 
+            <li class="men"><a class="nav__link" href="index.html">About us</a></li>
+            <!-- the ONLY thing that made the "about us" and "contact" not show when 600px was to give "li" and "a" classes, didn't work when they had the same class either -->
+            <li class="men"><a class="nav__link" href="contact.html">Contact</a></li>
+            <li><a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a></li>
         </ul>
-        <script>
-            function dropNav() {
-              let drop = document.getElementById("drop-nav");
-              if (drop.className === "nav") {
-                drop.className += " responsive";
-              } else {
-                drop.className = "nav";
-              }
-            }
-            </script>
     </nav>
+      
+      <script>
+      function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav";
+        }
+      }
+      </script>
     <header class="header">
             <div class="margin header-style">
                     <div class="header__text">
