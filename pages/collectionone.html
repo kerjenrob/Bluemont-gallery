@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the gallery of one of our fine artist, click on any of the art to learn more or to buy.">
+    <meta name="og:description" content="This is the gallery of one of our fine artist, click on any of the art to learn more or to buy.">
+    <meta name="twitter:description" content="This is the gallery of one of our fine artist, click on any of the art to learn more or to buy.">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/collectionone.css">
+    <script src="https://kit.fontawesome.com/c99908aa44.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&family=Lora&display=swap" rel="stylesheet"> 
+    <title>Gallery</title>
+</head>
+<body>
+    <nav class="nav">
+        <a class="nav__logo" href="index.html">
+            <h1 class="logo">Bluemont gallery</h1>
+        </a>
+        <ul class="nav__menu" id="drop-nav">
+            <li><a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a></li>
+            <ul class="dropdown">
+                <li><a class="dropbtn" href="#">Gallery</a></li>
+                <ul class="dropdown-content">
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#collection1">Collection Stargaze</a></li>
+                    <li><a href="#collection2">Collection Lemonade</a></li>
+                    <li><a href="#collection3">Collection Sunshine</a></li>
+                    
+                </ul>
+                <li class="men"><a class="nav__link" href="index.html">About us</a></li>
+            <!-- the ONLY thing that made the "about us" and "contact" not show when 600px was to give "li" and "a" classes, didn't work when they had the same class either -->
+            <li class="men"><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul> 
+            
+        </ul>
+    </nav>
+      
+      <script>
+      function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav__menu") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav__menu";
+        }
+      }
+      </script>
+     
+    <section class="header">
+        <div class="margin">
+                <h1 class="main-headline">Star gaze collection</h1>
+                <div class="header__text">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Aenean commodo ligula eget dolor. </p>
+                </div>
+        </div>
+        <div class="gallery">
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-ekrulila-3246665.jpg" width="250" alt="Painting of a giraffe">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-lumn-587958.jpg" width="250" alt="Water color painting">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-steve-johnson-1109354.jpg" height="250" alt="Blue oil painting">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-steve-johnson-1572386.jpg" width="250" alt="Black and white painting">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-steve-johnson-1585325.jpg" width="250" alt="Colorful oil painting">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-steve-johnson-1672850.jpg" height="250" alt="Oil painting moon">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-torsten-dettlaff-971546.jpg" width="250" alt="Abstract mixed media art">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img src="../images/stargaze_gallery/pexels-nick-collins-1292998.jpg" height="250" alt="Blue abstract oil painting">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Click to learn more or buy</h2>
+                </div>
+            </a>
+            <a class="gallery__imgdiv" href="./_collectiontwo.html">
+                <img class="artist-img" src="../images/stargaze_gallery/Rene/pexels-rene-asmussen-25758.jpg" width="250" alt="">
+                <div class="gallery__hover">
+                    <h2 class="gallery__buy">Read about the artist</h2>
+                </div>
+            </a>
+            
+        </div>
+    </section>
+    <section class="white-space"></section>
+    <section class="beige__container">
+        <div class="beige"></div>
+    </section>
+</body>
+</html>

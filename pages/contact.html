@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact page for Bluemont gallery and a map to visit us.">
+    <meta name="og:description" content="Contact page for Bluemont gallery and a map to visit us.">
+    <meta name="twitter:description" content="Contact page for Bluemont gallery and a map to visit us.">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <script src="https://kit.fontawesome.com/c99908aa44.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&family=Lora&display=swap" rel="stylesheet"> 
+    <title>Contact</title>
+</head>
+<body>
+    <nav class="nav">
+        <a class="nav__logo" href="index.html">
+            <h1 class="logo">Bluemont gallery</h1>
+        </a>
+        <ul class="nav__menu" id="drop-nav">
+            <li><a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a></li>
+            <ul class="dropdown">
+                <li><a class="dropbtn" href="#">Gallery</a></li>
+                <ul class="dropdown-content">
+                    <li><a href="#artists">Artists</a></li>
+                    <li><a href="#collection1">Collection Stargaze</a></li>
+                    <li><a href="#collection2">Collection Lemonade</a></li>
+                    <li><a href="#collection3">Collection Sunshine</a></li>
+                    
+                </ul>
+                <li class="men"><a class="nav__link" href="index.html">About us</a></li>
+            <!-- the ONLY thing that made the "about us" and "contact" not show when 600px was to give "li" and "a" classes, didn't work when they had the same class either -->
+            <li class="men"><a class="nav__link" href="contact.html">Contact</a></li>
+            </ul> 
+            
+        </ul>
+    </nav>
+      
+      <script>
+      function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav__menu") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav__menu";
+        }
+      }
+      </script>
+    <header class="header">
+            <div class="margin header-style">
+                    <div class="header__text">
+                        <div class="header__textbox">
+                            <h1 class="main-headline">Contact us</h1>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                            Aenean commodo ligula eget dolor. Aenean massa. </p>
+                        </div>
+                        
+                        <i class="fa-regular fa-arrow-down fa-2xl"></i>
+                    </div>
+                    <div class="header__imgbox"> 
+                        <img class="header__img" src="../images/xxl-contact.jpg" alt="Contact us image">
+                        <!-- <picture> THIS WON'T WORK
+                            <source media="(min-width:1500px)" srcset="../images/big-contact.jpg" alt="Contact us image">
+                            <source media="(max-width:1499px)" srcset="../images../images/medium-contact.jpg" alt="Contact us image">
+                            <source media="(max-width:800px)" srcset="../images/small-contact.jpg" alt="Contact us image">
+                            <img class="header__img" src="../images/small-contact.jpg" alt="Contact us image">
+                        </picture> -->
+                    </div>
+            </div>
+    </header>
+
+    
+    <main>
+        <section class="white-space"></section>
+        <section class="contact__form">
+            <h2 class="main-headline  contact">Contact form</h2>
+            <div class="contact__blue">
+                <form action="" class="form">
+                    <label for="text" class="form__label"></label>
+                    <input type="text" class="form__enter-info" placeholder="Name">
+                    <label for="text" class="form__label"></label>
+                    <input type="text" class="form__enter-info" placeholder="Subject">
+                    <label for="text" class="form__label"></label>
+                    <input type="text" class="form__enter-info message" placeholder="Write what you want to say...">
+                    <button class="form-btn" type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section>
+            <div class="findus__space">
+                <h2 class="main-headline findus">Find us</h2>
+            </div>
+            <div class="findus__beige-bg">
+                <div class="margin bottom-style">
+                        <div class="findus__imgbox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2035.1929865153695!2d18.068294216072363!3d59.329731781658964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d592bf2a53d%3A0x5afe7e58cbd3397b!2sKungliga%20Operan!5e0!3m2!1ssv!2sse!4v1649076959455!5m2!1ssv!2sse"
+                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <div class="findus__text">
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                                Aenean commodo ligula eget dolor. Aenean massa. </p>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
