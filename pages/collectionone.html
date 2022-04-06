@@ -13,37 +13,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&family=Lora&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <title>Gallery</title>
 </head>
 <body>
-    <nav class="nav" id="drop-nav">
+    <nav class="nav">
         <a class="nav__logo" href="index.html">
             <h1 class="logo">Bluemont gallery</h1>
         </a>
-        <ul class="nav__menu">
+        <ul class="nav__menu" id="drop-nav">
+            <li><a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a></li>
             <ul class="dropdown">
-                <li><a class="dropbtn" href="./contact.html">Gallery</a></li>
+                <li><a class="dropbtn" href="#">Gallery</a></li>
                 <ul class="dropdown-content">
                     <li><a href="#artists">Artists</a></li>
                     <li><a href="#collection1">Collection Stargaze</a></li>
                     <li><a href="#collection2">Collection Lemonade</a></li>
                     <li><a href="#collection3">Collection Sunshine</a></li>
+                    
                 </ul>
-            </ul> 
-            <li class="men"><a class="nav__link" href="index.html">About us</a></li>
+                <li class="men"><a class="nav__link" href="index.html">About us</a></li>
             <!-- the ONLY thing that made the "about us" and "contact" not show when 600px was to give "li" and "a" classes, didn't work when they had the same class either -->
             <li class="men"><a class="nav__link" href="contact.html">Contact</a></li>
-            <li><a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a></li>
+            </ul> 
+            
         </ul>
     </nav>
       
       <script>
       function dropNav() {
         let drop = document.getElementById("drop-nav");
-        if (drop.className === "nav") {
+        if (drop.className === "nav__menu") {
           drop.className += " responsive";
         } else {
-          drop.className = "nav";
+          drop.className = "nav__menu";
         }
       }
       </script>
@@ -57,9 +59,9 @@
                 </div>
         </div>
         <div class="gallery">
-            <div class="gallery__imgdiv"><img src="../images/stargaze_gallery/pexels-ekrulila-3246665.jpg" width="250" alt="Painting of a giraffe"></div>
-            <div class="gallery__imgdiv"><img src="../images/stargaze_gallery/pexels-lumn-587958.jpg" width="250" alt="Water color painting"></div>
-            <div class="gallery__imgdiv"><img src="../images/stargaze_gallery/pexels-steve-johnson-1109354.jpg" height="250" alt="Blue oil painting"></div>
+            <div class="gallery__imgdiv"><img class="gallery__img" src="../images/stargaze_gallery/pexels-ekrulila-3246665.jpg" width="250" alt="Painting of a giraffe"></div>
+            <div class="gallery__imgdiv"><img  class="gallery__img" src="../images/stargaze_gallery/pexels-lumn-587958.jpg" width="250" alt="Water color painting"></div>
+            <div class="gallery__imgdiv"><img class="gallery__img" src="../images/stargaze_gallery/pexels-steve-johnson-1109354.jpg" height="250" alt="Blue oil painting"></div>
             <div class="gallery__imgdiv"><img src="../images/stargaze_gallery/pexels-steve-johnson-1572386.jpg" width="250" alt="Black and white painting"></div>
             <div class="gallery__imgdiv"><img src="../images/stargaze_gallery/pexels-steve-johnson-1585325.jpg" width="250" alt="Colorful oil painting"></div>
             <div class="gallery__imgdiv"><img src="../images/stargaze_gallery/pexels-steve-johnson-1672850.jpg" height="250" alt="Oil painting moon"></div>

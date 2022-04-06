@@ -109,7 +109,7 @@
   display: block;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
   a.nav__link, a.dropbtn {
     /*att menyn inte ska synas*/
     display: none;
@@ -122,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
   .nav__menu.responsive {
     position: relative;
     display: block;
@@ -222,8 +222,10 @@
 .gallery {
   display: -ms-grid;
   display: grid;
-  grid-column: repeat(3, 1fr);
-  grid-row: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   grid-gap: 15px;
   margin-top: 80px;
   position: absolute;
@@ -285,5 +287,84 @@
   background-color: #EDE6DC;
   height: 400px;
   width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .gallery {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .white-space {
+    height: 600px;
+  }
+  .beige {
+    background-color: #EDE6DC;
+    height: 600px;
+    width: 100%;
+  }
+  .main-headline {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .gallery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin-top: 100px;
+    padding-top: 20px;
+    top: 100px;
+  }
+  .main-headline {
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+  .paragraph {
+    font-size: 16px;
+    max-width: 350px;
+    width: 100%;
+  }
+  .margin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 443px;
+  }
+  .white-space {
+    height: 1600px;
+  }
+  .beige {
+    background-color: #EDE6DC;
+    height: 700px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .logo {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main-headline {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .paragraph {
+    max-width: 270px;
+    width: 100%;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=collectionone.css.map */

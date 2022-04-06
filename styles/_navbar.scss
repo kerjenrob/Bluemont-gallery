@@ -109,7 +109,7 @@
   display: block;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
     // .nav a:not(:first-child), 
     a.nav__link, a.dropbtn { /*att menyn inte ska synas*/
       display: none;
@@ -123,7 +123,7 @@
 
   }
   
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 740px) {
     .nav__menu.responsive {
         position: relative;
         display: block;
