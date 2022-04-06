@@ -96,7 +96,7 @@
 }
 
 .nav a:hover, .dropdown:hover .dropbtn {
-  background-color: #95D5B2;
+  background-color: #AB7020;
   color: white;
 }
 
@@ -131,11 +131,7 @@
         // top: 50px;
         z-index: 1;
     }
-
-    // .nav__menu.responsive .nav {
-    //   overflow: visible;
-    // }
-
+    
     .nav__menu.responsive .icon { /* att ikonen ska stanna i hörnet och inte följa med dropdown*/
       position: absolute;
       right: 0;
@@ -169,44 +165,3 @@
       text-align: left;
     }
   }
-
-
-
-
-
-
-
-  // @media screen and (max-width: 600px) {
-  //   .dropdown__content {
-  //       display: none;
-  //   }
-
-  //   .icon {
-  //     float: right;
-  //     display: block;
-  //   }
-
-  //   .nav__list {
-  //       display: none;
-  //   }
-  // }
-  
-  // @media screen and (max-width: 600px) {
-  //   .dropdown__content.responsive {
-  //       position: relative;
-  //       display: block;
-  //   }
-
-  //   .dropdown__content.responsive .icon {
-  //     position: absolute;
-  //     right: 0;
-  //     top: 0;
-  //     display: block;
-  //   }
-
-  //   .dropdown__content.responsive a {
-  //     float: none;
-  //     display: block;
-  //     text-align: left;
-  //   }
-  // }

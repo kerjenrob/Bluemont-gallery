@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.nav a, .dropdown .dropbtn, .paragraph, .gallery-btn {
+.nav a, .dropdown .dropbtn, .paragraph, .gallery__buy, .gallery-btn {
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
@@ -96,7 +96,7 @@
 }
 
 .nav a:hover, .dropdown:hover .dropbtn {
-  background-color: #95D5B2;
+  background-color: #AB7020;
   color: white;
 }
 
@@ -157,6 +157,10 @@
   }
 }
 
+a {
+  cursor: pointer;
+}
+
 .main-headline {
   font-family: 'Cinzel';
   font-style: normal;
@@ -165,7 +169,7 @@
   color: #29304A;
 }
 
-.nav a, .dropdown .dropbtn, .paragraph, .gallery-btn {
+.nav a, .dropdown .dropbtn, .paragraph, .gallery__buy, .gallery-btn {
   font-family: 'Arvo';
   font-style: normal;
   font-weight: 400;
@@ -234,16 +238,51 @@
 }
 
 .gallery__imgdiv {
-  background-color: #29304A;
+  position: relative;
+}
+
+.gallery__img {
+  opacity: 1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.gallery__hover {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gallery__imgdiv:hover .gallery__img {
+  opacity: 0.3;
+}
+
+.gallery__imgdiv:hover .gallery__hover {
+  opacity: 1;
+}
+
+.gallery__buy {
+  background-color: #AB7020;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.gallery__imgdiv {
   max-width: 250px;
   height: 250px;
   width: 100%;
   overflow: hidden;
-}
-
-.gallery__imgdiv:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  position: relative;
 }
 
 .learn-more {

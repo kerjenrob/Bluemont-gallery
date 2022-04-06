@@ -1,5 +1,9 @@
 @import 'navbar';
 
+a {
+    cursor: pointer;
+}
+
 %cinzel {
     font-family: 'Cinzel';
     font-style: normal;
@@ -78,22 +82,51 @@
 }
 
 .gallery__imgdiv {
-    background-color: #29304A;
+    position: relative;
+  }
+  
+  .gallery__img {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .gallery__hover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .gallery__imgdiv:hover .gallery__img {
+    opacity: 0.3;
+  }
+  
+  .gallery__imgdiv:hover .gallery__hover {
+    opacity: 1;
+  }
+  
+  .gallery__buy {
+    background-color: #AB7020;
+    color: white;
+    @extend %arvo;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+.gallery__imgdiv {
+    // background-color: #29304A;
     max-width: 250px;
     height: 250px;
     width: 100%;
     // overflow-y: hidden;
     overflow: hidden;
+    position: relative;
 }
-
-.gallery__imgdiv:hover {
-    transform: scale(1.05);
-}
-
-// .gallery__img {
-//     height: 90%;
-//     width: 90%;
-// }
 
 .learn-more {
     height: 210px;
@@ -120,10 +153,6 @@
     background: #54360d;
 }
 
-// / .artist {
-// //     height: 210px;
-// //     width: 260px;
-// // }
 
 // WHITE SPACE
 
