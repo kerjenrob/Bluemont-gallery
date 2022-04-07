@@ -1,4 +1,5 @@
 @import 'navbar';
+@import 'footer';
 
 %cinzel {
     font-family: 'Cinzel';
@@ -154,6 +155,11 @@
     border: none;
 }
 
+.form-btn:hover {
+    transform: scaleX(1.05);
+    background-color: #68430e;
+}
+
 // .form__enter-info {
 //     max-width: 503px;
 //     width: 100%;
@@ -223,7 +229,7 @@
 //     width: auto;
 // }
 
-// @import 'footer';
+
 
 @media screen and (max-width: 1795px) {
     .margin {

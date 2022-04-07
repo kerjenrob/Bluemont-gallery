@@ -1,4 +1,5 @@
 @import 'navbar';
+@import 'footer';
 
 a {
     cursor: pointer;
@@ -239,8 +240,6 @@ a {
         width: 100%;
     }
 }
-
-@import 'footer';
 
 @media screen and (max-width: 490px)  {
     .logo {

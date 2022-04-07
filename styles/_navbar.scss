@@ -58,6 +58,7 @@
 
 .nav .icon {
   display: none;
+  color: #29304A;
 }
 
 .dropdown li {
@@ -134,6 +135,7 @@
     
     .nav__menu.responsive .icon { /* att ikonen ska stanna i hörnet och inte följa med dropdown*/
       position: absolute;
+      color: #29304A;
       right: 0;
       top: 30px;
     }

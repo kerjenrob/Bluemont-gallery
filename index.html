@@ -10,6 +10,39 @@
     <link rel="stylesheet" href ="/styles/index.css">
 </head>
 <body>
+    <nav class="nav">
+        <a class="nav__logo" href="../index.html">
+            <h1 class="logo">Bluemont gallery</h1>
+        </a>
+        <ul class="nav__menu" id="drop-nav">
+            <li><a class="icon" onclick="dropNav()"><i class="fa fa-bars"></i></a></li>
+            <ul class="dropdown">
+                <li><a class="dropbtn" href="../pages/_artistworks.html">Gallery</a></li>
+                <ul class="dropdown-content">
+                    <li><a href="../pages/_artist.html">Artists</a></li>
+                    <li><a href="../pages/collectionone.html">Collection Stargaze</a></li>
+                    <li><a href="../pages/collectionone.html">Collection Lemonade</a></li>
+                    <li><a href="../pages/collectionone.html">Collection Sunshine</a></li>
+                    
+                </ul>
+                <li class="men"><a class="nav__link" href="../pages/_aboutus.html">About us</a></li>
+            <!-- the ONLY thing that made the "about us" and "contact" not show when 600px was to give "li" and "a" classes, didn't work when they had the same class either -->
+            <li class="men"><a class="nav__link" href="../pages/contact.html">Contact</a></li>
+            </ul> 
+            
+        </ul>
+    </nav>
+      
+      <script>
+      function dropNav() {
+        let drop = document.getElementById("drop-nav");
+        if (drop.className === "nav__menu") {
+          drop.className += " responsive";
+        } else {
+          drop.className = "nav__menu";
+        }
+      }
+      </script>
     <div class="home_banner">
         <h1>HOME</h1>
     </div>
