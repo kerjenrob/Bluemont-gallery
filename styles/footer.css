@@ -64,7 +64,7 @@ footer {
   width: 100%;
 }
 
-a {
+.footer__a {
   color: #FFFFFF;
   text-decoration: none;
 }
